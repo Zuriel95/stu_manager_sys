@@ -1,44 +1,295 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
-      <Extensions>qrc;*</Extensions>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
       <ParseFiles>false</ParseFiles>
     </Filter>
     <Filter Include="Form Files">
       <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
       <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
       <Extensions>qrc;*</Extensions>
       <ParseFiles>false</ParseFiles>
     </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="add_class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="add_course.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="add_score.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="add_stu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="delete_class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="delete_course.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="delete_score.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="delete_stu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="mainwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="menu_admin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_stu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modify_class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modify_course.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modify_score.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modify_stu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_course.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_score.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_stu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="add_class.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="add_course.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="add_score.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="add_stu.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="delete_class.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="delete_course.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="delete_score.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="delete_stu.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <QtMoc Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="menu_admin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="menu_stu.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="modify_class.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="modify_course.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="modify_score.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="modify_stu.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ms_class.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ms_course.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ms_score.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ms_stu.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="add_class.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="add_course.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="add_score.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="add_stu.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="delete_class.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="delete_course.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="delete_score.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="delete_stu.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
     <QtUic Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="menu_admin.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="menu_stu.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="modify_class.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="modify_course.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="modify_score.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="modify_stu.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ms_class.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ms_course.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ms_score.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ms_stu.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

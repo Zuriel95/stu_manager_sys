@@ -14,8 +14,62 @@ MOC_DIR += .
 OBJECTS_DIR += debug
 UI_DIR += .
 RCC_DIR += .
-HEADERS += ./mainwindow.h
+HEADERS += ./mainwindow.h \
+    menu_admin.h \
+    menu_stu.h \
+    ms_class.h \
+    ms_course.h \
+    ms_score.h \
+    ms_stu.h \
+    add_stu.h \
+    delete_stu.h \
+    modify_stu.h \
+    add_class.h \
+    add_course.h \
+    add_score.h \
+    delete_class.h \
+    delete_course.h \
+    delete_score.h \
+    modify_class.h \
+    modify_course.h \
+    modify_score.h
 SOURCES += ./main.cpp \
-    ./mainwindow.cpp
-FORMS += ./mainwindow.ui
+    ./mainwindow.cpp \
+    menu_admin.cpp \
+    menu_stu.cpp \
+    ms_class.cpp \
+    ms_course.cpp \
+    ms_score.cpp \
+    ms_stu.cpp \
+    add_stu.cpp \
+    delete_stu.cpp \
+    modify_stu.cpp \
+    add_class.cpp \
+    add_course.cpp \
+    add_score.cpp \
+    delete_class.cpp \
+    delete_course.cpp \
+    delete_score.cpp \
+    modify_class.cpp \
+    modify_course.cpp \
+    modify_score.cpp
+FORMS += ./mainwindow.ui \
+    menu_admin.ui \
+    menu_stu.ui \
+    ms_class.ui \
+    ms_course.ui \
+    ms_score.ui \
+    ms_stu.ui \
+    add_stu.ui \
+    delete_stu.ui \
+    modify_stu.ui \
+    add_class.ui \
+    add_course.ui \
+    add_score.ui \
+    delete_class.ui \
+    delete_course.ui \
+    delete_score.ui \
+    modify_class.ui \
+    modify_course.ui \
+    modify_score.ui
 RESOURCES += mainwindow.qrc

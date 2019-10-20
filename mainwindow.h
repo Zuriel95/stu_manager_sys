@@ -13,6 +13,9 @@ class mainwindow : public QMainWindow
 public:
 	mainwindow(QWidget *parent = Q_NULLPTR);
 	~mainwindow();
+	void connect_mysql(MYSQL * db);
+
+
 private:
 	Ui::mainwindowClass ui;
 	MYSQL* db;

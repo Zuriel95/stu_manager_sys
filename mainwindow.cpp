@@ -6,6 +6,20 @@ mainwindow::mainwindow(QWidget *parent)
 {
 	ui.setupUi(this);
 
+	connect_mysql(db);
+
+
+
+
+}
+
+mainwindow::~mainwindow()
+{
+	mysql_close(db); //关闭连接
+}
+
+void mainwindow::connect_mysql(MYSQL* db)
+{
 	//连接数据库
 	db = mysql_init(NULL); //初始化
 	if (db == NULL)
@@ -17,13 +31,4 @@ mainwindow::mainwindow(QWidget *parent)
 	else
 		QMessageBox::information(this, QString::fromLocal8Bit("信息"), QString::fromLocal8Bit("数据库连接成功!"), QString::fromLocal8Bit("确认"));
 	*/
-
-
-
-
-}
-
-mainwindow::~mainwindow()
-{
-	mysql_close(db); //关闭连接
 }
