@@ -32,7 +32,8 @@ HEADERS += ./mainwindow.h \
     delete_score.h \
     modify_class.h \
     modify_course.h \
-    modify_score.h
+    modify_score.h \
+    mainwindow.h
 SOURCES += ./main.cpp \
     ./mainwindow.cpp \
     menu_admin.cpp \
@@ -52,7 +53,8 @@ SOURCES += ./main.cpp \
     delete_score.cpp \
     modify_class.cpp \
     modify_course.cpp \
-    modify_score.cpp
+    modify_score.cpp \
+    mainwindow.cpp
 FORMS += ./mainwindow.ui \
     menu_admin.ui \
     menu_stu.ui \
@@ -71,5 +73,6 @@ FORMS += ./mainwindow.ui \
     delete_score.ui \
     modify_class.ui \
     modify_course.ui \
-    modify_score.ui
+    modify_score.ui \
+    mainwindow.ui
 RESOURCES += mainwindow.qrc
