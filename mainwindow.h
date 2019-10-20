@@ -1,22 +1,22 @@
-#pragma once
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
-#include <QtWidgets/QMainWindow>
-#include "ui_mainwindow.h"
-#include <mysql.h>
+#include <QMainWindow>
 
+namespace Ui {
+class MainWindow;
+}
 
-
-class mainwindow : public QMainWindow
+class MainWindow : public QMainWindow
 {
-	Q_OBJECT
+    Q_OBJECT
 
 public:
-	mainwindow(QWidget *parent = Q_NULLPTR);
-	~mainwindow();
-	void connect_mysql(MYSQL * db);
-
+    explicit MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
 
 private:
-	Ui::mainwindowClass ui;
-	MYSQL* db;
+    Ui::MainWindow *ui;
 };
+
+#endif // MAINWINDOW_H
