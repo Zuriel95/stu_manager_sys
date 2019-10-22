@@ -37,7 +37,61 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="cmbox_col"/>
+       <widget class="QComboBox" name="cmbox_col">
+        <property name="currentIndex">
+         <number>6</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>按类型</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>学号</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>姓名</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>性别</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>年龄</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>专业</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>班级号</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>手机号</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>宿舍号</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>床位号</string>
+         </property>
+        </item>
+       </widget>
       </item>
       <item>
        <spacer name="horizontalSpacer_2">
@@ -150,7 +204,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QTableView" name="tableView"/>
+    <widget class="QTableWidget" name="tableWidget"/>
    </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">

@@ -1,4 +1,4 @@
-#ifndef DELETE_COURSE_H
+﻿#ifndef DELETE_COURSE_H
 #define DELETE_COURSE_H
 
 #include <QDialog>
@@ -14,6 +14,12 @@ class delete_course : public QDialog
 public:
     explicit delete_course(QWidget *parent = nullptr);
     ~delete_course();
+
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
 
 private:
     Ui::delete_course *ui;

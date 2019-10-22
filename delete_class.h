@@ -1,4 +1,4 @@
-#ifndef DELETE_CLASS_H
+﻿#ifndef DELETE_CLASS_H
 #define DELETE_CLASS_H
 
 #include <QDialog>
@@ -14,6 +14,12 @@ class delete_class : public QDialog
 public:
     explicit delete_class(QWidget *parent = nullptr);
     ~delete_class();
+
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
 
 private:
     Ui::delete_class *ui;

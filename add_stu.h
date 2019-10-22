@@ -1,4 +1,4 @@
-#ifndef ADD_STU_H
+﻿#ifndef ADD_STU_H
 #define ADD_STU_H
 
 #include <QDialog>
@@ -14,6 +14,14 @@ class add_stu : public QDialog
 public:
     explicit add_stu(QWidget *parent = nullptr);
     ~add_stu();
+    void initUI();
+
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
+    void add();
 
 private:
     Ui::add_stu *ui;

@@ -1,4 +1,4 @@
-#ifndef ADD_CLASS_H
+﻿#ifndef ADD_CLASS_H
 #define ADD_CLASS_H
 
 #include <QDialog>
@@ -14,6 +14,14 @@ class add_class : public QDialog
 public:
     explicit add_class(QWidget *parent = nullptr);
     ~add_class();
+    void initUI();
+
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
+    void add();
 
 private:
     Ui::add_class *ui;

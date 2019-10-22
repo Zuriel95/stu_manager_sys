@@ -1,4 +1,4 @@
-#ifndef DELETE_SCORE_H
+﻿#ifndef DELETE_SCORE_H
 #define DELETE_SCORE_H
 
 #include <QDialog>
@@ -14,6 +14,12 @@ class delete_score : public QDialog
 public:
     explicit delete_score(QWidget *parent = nullptr);
     ~delete_score();
+
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
 
 private:
     Ui::delete_score *ui;

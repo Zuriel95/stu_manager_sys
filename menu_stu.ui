@@ -279,14 +279,7 @@
     </spacer>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,4,2">
-     <item>
-      <widget class="QPushButton" name="btn_return">
-       <property name="text">
-        <string>返回</string>
-       </property>
-      </widget>
-     </item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="7,2,1">
      <item>
       <spacer name="horizontalSpacer_8">
        <property name="orientation">
@@ -301,11 +294,24 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_quit">
+      <widget class="QPushButton" name="btn_return">
        <property name="text">
-        <string>退出</string>
+        <string>返回</string>
        </property>
       </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_11">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
      </item>
     </layout>
    </item>

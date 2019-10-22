@@ -1,4 +1,4 @@
-#ifndef MODIFY_CLASS_H
+﻿#ifndef MODIFY_CLASS_H
 #define MODIFY_CLASS_H
 
 #include <QDialog>
@@ -15,6 +15,11 @@ public:
     explicit modify_class(QWidget *parent = nullptr);
     ~modify_class();
 
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
 private:
     Ui::modify_class *ui;
 };

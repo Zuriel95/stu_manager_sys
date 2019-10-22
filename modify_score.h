@@ -1,4 +1,4 @@
-#ifndef MODIFY_SCORE_H
+﻿#ifndef MODIFY_SCORE_H
 #define MODIFY_SCORE_H
 
 #include <QDialog>
@@ -14,6 +14,12 @@ class modify_score : public QDialog
 public:
     explicit modify_score(QWidget *parent = nullptr);
     ~modify_score();
+
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
 
 private:
     Ui::modify_score *ui;

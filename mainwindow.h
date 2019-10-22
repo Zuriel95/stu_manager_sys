@@ -21,14 +21,22 @@ public:
     ~MainWindow();
     void connect_mysql();
     bool is_stu();
+    void clearUI();
+
+signals:
+    void send_name(QString);
+    void send_stu_id(QString);
 
 private slots:
 	void login();
+    void reshow();
+
 private:
     Ui::MainWindow *ui;
-    menu_stu *m_s;
     menu_admin *m_a;
+    menu_stu *m_s;
 	QString user_type;
+    QString user_name;
 
 };
 

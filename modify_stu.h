@@ -1,4 +1,4 @@
-#ifndef MODIFY_STU_H
+﻿#ifndef MODIFY_STU_H
 #define MODIFY_STU_H
 
 #include <QDialog>
@@ -14,6 +14,12 @@ class modify_stu : public QDialog
 public:
     explicit modify_stu(QWidget *parent = nullptr);
     ~modify_stu();
+
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
 
 private:
     Ui::modify_stu *ui;

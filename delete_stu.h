@@ -1,4 +1,4 @@
-#ifndef DELETE_STU_H
+﻿#ifndef DELETE_STU_H
 #define DELETE_STU_H
 
 #include <QDialog>
@@ -15,6 +15,11 @@ public:
     explicit delete_stu(QWidget *parent = nullptr);
     ~delete_stu();
 
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
 private:
     Ui::delete_stu *ui;
 };

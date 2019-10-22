@@ -1,4 +1,4 @@
-#ifndef MODIFY_COURSE_H
+﻿#ifndef MODIFY_COURSE_H
 #define MODIFY_COURSE_H
 
 #include <QDialog>
@@ -14,6 +14,12 @@ class modify_course : public QDialog
 public:
     explicit modify_course(QWidget *parent = nullptr);
     ~modify_course();
+
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
 
 private:
     Ui::modify_course *ui;

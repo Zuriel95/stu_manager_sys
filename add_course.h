@@ -1,4 +1,4 @@
-#ifndef ADD_COURSE_H
+﻿#ifndef ADD_COURSE_H
 #define ADD_COURSE_H
 
 #include <QDialog>
@@ -14,6 +14,14 @@ class add_course : public QDialog
 public:
     explicit add_course(QWidget *parent = nullptr);
     ~add_course();
+    void initUI();
+
+signals:
+    void signal_ret();
+
+private slots:
+    void slot_ret();
+    void add();
 
 private:
     Ui::add_course *ui;

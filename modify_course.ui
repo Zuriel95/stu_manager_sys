@@ -113,7 +113,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_confirm_2">
+      <widget class="QPushButton" name="btn_confirm">
        <property name="text">
         <string>确认</string>
        </property>
@@ -133,7 +133,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="btn_cancel_2">
+      <widget class="QPushButton" name="btn_cancel">
        <property name="text">
         <string>取消</string>
        </property>

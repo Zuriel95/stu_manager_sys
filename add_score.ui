@@ -23,11 +23,17 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>添加</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="2,1,1,1,1,1">
    <item>
     <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="font">
       <font>
        <family>微软雅黑</family>
@@ -81,7 +87,78 @@
       </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="cmbox_term"/>
+      <widget class="QComboBox" name="cmbox_term">
+       <item>
+        <property name="text">
+         <string>大一上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大一下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大二上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大二下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大三上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大三下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大四上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大四下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研一上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研一下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研二上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研二下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研三上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研三下</string>
+        </property>
+       </item>
+      </widget>
      </item>
      <item>
       <spacer name="horizontalSpacer_7">
@@ -165,7 +242,7 @@
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,5,5">
+    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,4,1,1,4">
      <item>
       <widget class="QLabel" name="label_6">
        <property name="text">
@@ -174,7 +251,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="le_teacher">
        <property name="placeholderText">
         <string>请输入教师姓名</string>
        </property>
@@ -192,6 +269,20 @@
         </size>
        </property>
       </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>学生姓名:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="le_name">
+       <property name="placeholderText">
+        <string>请输入学生姓名</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>

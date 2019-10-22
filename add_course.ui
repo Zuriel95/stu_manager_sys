@@ -35,7 +35,7 @@
    <item>
     <widget class="QLabel" name="label">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -114,7 +114,78 @@
       </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="cmbox_term"/>
+      <widget class="QComboBox" name="cmbox_term">
+       <item>
+        <property name="text">
+         <string>大一上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大一下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大二上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大二下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大三上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大三下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大四上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>大四下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研一上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研一下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研二上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研二下</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研三上</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>研三下</string>
+        </property>
+       </item>
+      </widget>
      </item>
      <item>
       <spacer name="horizontalSpacer_4">
