@@ -92,6 +92,9 @@
     <ClCompile Include="modify_score.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="modify_self.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="modify_stu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -151,6 +154,9 @@
     <QtMoc Include="modify_score.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="modify_self.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <QtMoc Include="modify_stu.h">
       <Filter>Header Files</Filter>
     </QtMoc>
@@ -168,6 +174,8 @@
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
+    
+    
     
     
     
@@ -233,6 +241,7 @@
     
     
     
+    
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="add_class.ui">
@@ -275,6 +284,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="modify_score.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="modify_self.ui">
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="modify_stu.ui">

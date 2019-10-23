@@ -14,12 +14,15 @@ class delete_stu : public QDialog
 public:
     explicit delete_stu(QWidget *parent = nullptr);
     ~delete_stu();
+    void initUI();
 
 signals:
     void signal_ret();
 
 private slots:
     void slot_ret();
+    void del();
+
 private:
     Ui::delete_stu *ui;
 };

@@ -1,4 +1,4 @@
-#ifndef MODIFY_SELF_H
+﻿#ifndef MODIFY_SELF_H
 #define MODIFY_SELF_H
 
 #include <QDialog>
@@ -14,9 +14,19 @@ class modify_self : public QDialog
 public:
     explicit modify_self(QWidget *parent = nullptr);
     ~modify_self();
+    void initUI();
+
+signals:
+    void signal_ret();
+
+private slots:
+    void get_stu_id(QString);
+    void slot_ret();
+    void modify();
 
 private:
     Ui::modify_self *ui;
+    QString stu_id;
 };
 
 #endif // MODIFY_SELF_H

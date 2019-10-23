@@ -9,7 +9,7 @@ menu_stu::menu_stu(QWidget *parent) :
     ui->setupUi(this);
     this->setAttribute(Qt::WA_DeleteOnClose,1); //窗口设置为关闭时,会回收资源
     //个人信息修改----------------------------待实现
-    //    connect(ui->btn_modify_info, SIGNAL(clicked(bool)), this, SLOT(into_ms_stu()));
+    connect(ui->btn_modify_info, SIGNAL(clicked(bool)), this, SLOT(mdf_self()));
     connect(ui->btn_ms_stu, SIGNAL(clicked(bool)), this, SLOT(into_ms_stu()));
     connect(ui->btn_ms_course, SIGNAL(clicked(bool)), this, SLOT(into_ms_course()));
     connect(ui->btn_ms_score, SIGNAL(clicked(bool)), this, SLOT(into_ms_score()));
@@ -39,6 +39,16 @@ void menu_stu::get_stu_id(QString str) { //接受父窗口传来的数据
 
 bool is_stu() {
     return true;
+}
+
+void menu_stu::mdf_self() {
+    this->hide();
+    m_self = new modify_self;
+    connect(m_self, SIGNAL(signal_ret()), this, SLOT(reshow()));
+
+    connect(this, SIGNAL(send_stu_id(QString)), m_self, SLOT(get_stu_id(QString)));
+    emit send_stu_id(stu_id);
+    m_self->show();
 }
 
 void menu_stu::into_ms_stu() { //跳转至ms_stu 查询本班同学信息

@@ -86,7 +86,33 @@
       </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="cmbox_col"/>
+      <widget class="QComboBox" name="cmbox_col">
+       <item>
+        <property name="text">
+         <string>学期</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>教师</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>教室</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>学时</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>学分</string>
+        </property>
+       </item>
+      </widget>
      </item>
      <item>
       <widget class="QLineEdit" name="le_val">

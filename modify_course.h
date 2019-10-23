@@ -14,12 +14,14 @@ class modify_course : public QDialog
 public:
     explicit modify_course(QWidget *parent = nullptr);
     ~modify_course();
+    void initUI();
 
 signals:
     void signal_ret();
 
 private slots:
     void slot_ret();
+    void modify();
 
 private:
     Ui::modify_course *ui;

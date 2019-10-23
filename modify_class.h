@@ -14,12 +14,14 @@ class modify_class : public QDialog
 public:
     explicit modify_class(QWidget *parent = nullptr);
     ~modify_class();
+    void initUI();
 
 signals:
     void signal_ret();
 
 private slots:
     void slot_ret();
+    void modify();
 private:
     Ui::modify_class *ui;
 };

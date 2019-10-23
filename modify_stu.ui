@@ -55,7 +55,68 @@
       </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="cmbox_col"/>
+      <widget class="QComboBox" name="cmbox_col">
+       <item>
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>性别</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>年龄</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>专业</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>班级号</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>地址</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>联系电话</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>宿舍号</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>床位号</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>奖励</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>记过</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>密码</string>
+        </property>
+       </item>
+      </widget>
      </item>
      <item>
       <widget class="QLineEdit" name="le_val">

@@ -14,12 +14,14 @@ class delete_course : public QDialog
 public:
     explicit delete_course(QWidget *parent = nullptr);
     ~delete_course();
+    void initUI();
 
 signals:
     void signal_ret();
 
 private slots:
     void slot_ret();
+    void del();
 
 private:
     Ui::delete_course *ui;

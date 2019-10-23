@@ -6,6 +6,7 @@
 #include <ms_class.h>
 #include <ms_course.h>
 #include <ms_score.h>
+#include <modify_self.h>
 
 namespace Ui {
 class menu_stu;
@@ -28,6 +29,7 @@ private slots:
     void into_ms_course();
     void into_ms_score();
     void reshow();
+    void mdf_self();
 
 signals:
     void signal_ret();
@@ -41,6 +43,7 @@ private:
     ms_stu *m_stu;
     ms_course *m_course;
     ms_score *m_score;
+    modify_self *m_self;
 };
 
 #endif // MENU_STU_H

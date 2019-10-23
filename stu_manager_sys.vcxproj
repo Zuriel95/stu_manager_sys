@@ -207,6 +207,7 @@
     <ClCompile Include="modify_class.cpp" />
     <ClCompile Include="modify_course.cpp" />
     <ClCompile Include="modify_score.cpp" />
+    <ClCompile Include="modify_self.cpp" />
     <ClCompile Include="modify_stu.cpp" />
     <ClCompile Include="ms_class.cpp" />
     <ClCompile Include="ms_course.cpp" />
@@ -293,6 +294,12 @@
       <Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">./$(Configuration)/moc_predefs.h</Include>
     </QtMoc>
     <QtMoc Include="modify_score.h">
+      <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor>
+      <Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">./$(Configuration)/moc_predefs.h</Include>
+      <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor>
+      <Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">./$(Configuration)/moc_predefs.h</Include>
+    </QtMoc>
+    <QtMoc Include="modify_self.h">
       <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">msvc</CompilerFlavor>
       <Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">./$(Configuration)/moc_predefs.h</Include>
       <CompilerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|x64'">msvc</CompilerFlavor>
@@ -417,6 +424,11 @@
       <QtUicDir>
       </QtUicDir>
       <QtUicFileName>ui_modify_score.h</QtUicFileName>
+    </QtUic>
+    <QtUic Include="modify_self.ui">
+      <QtUicDir>
+      </QtUicDir>
+      <QtUicFileName>ui_modify_self.h</QtUicFileName>
     </QtUic>
     <QtUic Include="modify_stu.ui">
       <QtUicDir>
