@@ -55,17 +55,22 @@ void MainWindow::login()
     user_type = (user_t == QString::fromLocal8Bit("学生")) ? "Stu" : "admin";
     //验证登录信息
     if(user_type == "admin") { //管理员信息验证
-        query.exec("select id, password, name from admin");
+        query.exec("select id, password from admin");
         bool flag = false;
         while(query.next()) {
             QString id_temp = query.value(0).toString();
             QString password_temp = query.value(1).toString();
-            user_name = query.value(2).toString();
             if (id == id_temp && password == password_temp) {
                 flag = true;
             }
         }
         if(flag) {  //用户密码正确, 则进入menu_admin窗口
+            // 获取用户名
+            QString str = "select name from admin where id = " + id;
+            query.exec(str);
+            if(query.first())
+                user_name = query.value("name").toString();
+
             this->hide();
             m_a = new menu_admin;
             connect(m_a, SIGNAL(signal_ret()), this, SLOT(reshow()));
@@ -77,17 +82,23 @@ void MainWindow::login()
             clearUI();
         }
     } else {                    //学生信息验证
-        query.exec("select stu_id, password, name from stu");
+        query.exec("select stu_id, password from stu");
         bool flag = false;
         while(query.next()) {
             QString stu_id_temp = query.value(0).toString();
             QString password_temp = query.value(1).toString();
-            user_name = query.value(2).toString();
             if (id == stu_id_temp && password == password_temp) {
                 flag = true;
             }
         }
         if(flag) {  //用户密码正确, 则进入menu_stu窗口
+            // 获取用户名
+            QString str = "select name from stu where stu_id = " + id;
+            qDebug() << str;
+            query.exec(str);
+            if(query.first())
+                user_name = query.value("name").toString();
+
             this->hide();
             m_s = new menu_stu;
             connect(m_s, SIGNAL(signal_ret()), this, SLOT(reshow()));
